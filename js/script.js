@@ -13,6 +13,19 @@ $(document).ready(function(){
         toggleTopMenu.classList.add('active');
     })
 
+    //Header top menu
+    const subpageNavButton = document.getElementById('subpageNavToggle');
+    const subpageNav = document.getElementById('subpageNav');
+
+    subpageNavButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (subpageNav.classList.contains('active')) {
+            subpageNav.classList.remove('active');
+            return;
+        }
+        subpageNav.classList.add('active');
+    })
+
     //Header menu middle
     const centerHeaderMenuButton = document.getElementById('centerHeaderMenuButton');
     const centerHeaderMenu = document.getElementById('centerHeaderMenu');
