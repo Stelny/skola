@@ -74,7 +74,11 @@
             box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.05);
             &-item {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+                /*@media screen and (max-width: 576px) {
+                    grid-template-columns: 1fr ;
+                    grid-row-gap: 1rem;
+                }*/
                 align-items: center;
                 padding: 1rem 2rem;
                 border-bottom: 1px solid #ebe7f2;
@@ -82,16 +86,26 @@
                     display: flex;
                     flex-direction: column;
                     span {
+                        display: flex;
+                        flex-direction: column;
                         &:first-child {
-    
+                            color: #484848;
+                            font-size: 15px;
                         }
-                        &:last-child {
-    
+                        &:nth-child(2) {
+                            font-weight: bold;
+                            color: black;
                         }
+                        
+                    }
+                    a {
+                        color: var(--primary);
+                        font-size: 15px;
                     }
                 }
                 &-phone {
-    
+                    font-weight: 600;
+                    font-size: 15px;
                 }
                 &-email {
     
