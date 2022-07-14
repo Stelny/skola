@@ -16,6 +16,7 @@
 //Pages
 @import './pages/homepage.scss';
 @import './pages/subpage.scss';
+@import './pages/contact.scss';
 
 //Basic
 
@@ -27,4 +28,7 @@ img, iframe {
 }
 a, a:hover {
     color: var(--primary);
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--inter);
 }

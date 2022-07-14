@@ -5,26 +5,29 @@ $(document).ready(function(){
     const toggleTopMenuButton = document.getElementById('toggleTopMenuButton');
     const toggleTopMenu = document.getElementById('toggleTopMenu');
 
-    toggleTopMenuButton.addEventListener('click', () => {
-        if (toggleTopMenu.classList.contains('active')) {
-            toggleTopMenu.classList.remove('active');
-            return;
-        }
-        toggleTopMenu.classList.add('active');
-    })
+    if (toggleTopMenuButton) {
+        toggleTopMenuButton.addEventListener('click', () => {
+            if (toggleTopMenu.classList.contains('active')) {
+                toggleTopMenu.classList.remove('active');
+                return;
+            }
+            toggleTopMenu.classList.add('active');
+        })
+    }
 
     //Header top menu
     const subpageNavButton = document.getElementById('subpageNavToggle');
     const subpageNav = document.getElementById('subpageNav');
-
-    subpageNavButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (subpageNav.classList.contains('active')) {
-            subpageNav.classList.remove('active');
-            return;
-        }
-        subpageNav.classList.add('active');
-    })
+    if (subpageNavButton) {
+        subpageNavButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (subpageNav.classList.contains('active')) {
+                subpageNav.classList.remove('active');
+                return;
+            }
+            subpageNav.classList.add('active');
+        })
+    }
 
     //Header menu middle
     const centerHeaderMenuButton = document.getElementById('centerHeaderMenuButton');

@@ -129,6 +129,7 @@
                     }
                     
                     a {
+                        font-family: var(--inter);
                         --linkColor: var(--blue);
                         --bgColor: var(--bgBlue);
                         display: flex;
@@ -358,6 +359,7 @@
                             display: flex;
                             align-items: center;
                             padding-right: 1.5rem;
+                            font-family: var(--inter);
 
 
                             &.student::after {
@@ -380,6 +382,7 @@
                         &:hover {
                             .header-bottom-content-center-menu {
                                 display: block;
+                                z-index: 50;
                             }
                         }
 
@@ -407,6 +410,7 @@
                     border: 2px solid white;
                     margin: 0 0.5rem;
                     border-radius: 50px;
+                    font-family: var(--inter);
                     @media screen and (max-width: 1200px) {
                         padding: 0.5rem;
                     }

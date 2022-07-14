@@ -1,0 +1,102 @@
+.contact {
+    padding: 4rem 0;
+    padding-bottom: 0;
+    &-heading {
+        h1 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            font-family: var(--inter);
+        }
+        p {
+            font-size: 1.313rem;
+            font-weight: 600;
+            color: black;
+            max-width: 900px;
+            margin-bottom: 2rem;
+        }
+    }
+    &-content {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+        grid-gap: 2rem;
+        p {
+            color: #8b8b8b;
+            font-size: 0.915rem;
+            font-weight: 400;
+            line-height: 2;
+            b {
+                color: black;
+                font-weight: 600;
+            }
+        }
+        &-left {
+
+        }
+        &-right {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            iframe {
+                height: 100%;
+                width: 100%;
+
+            }
+        }
+    }
+
+    &-items {
+        background-color: #f3f6f7;
+        padding: 4rem 0;
+        
+    }
+
+    &-item {
+        margin-bottom: 2rem;
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-family: var(--inter);
+        }
+        &-content {
+            background: white;
+            border-radius:10px;
+
+            -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.05);
+            -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.05);
+            box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.05);
+            &-item {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+                padding: 1rem 2rem;
+                border-bottom: 1px solid #ebe7f2;
+                &-name {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        &:first-child {
+    
+                        }
+                        &:last-child {
+    
+                        }
+                    }
+                }
+                &-phone {
+    
+                }
+                &-email {
+    
+                }
+            }
+        }
+    }
+}
