@@ -1,87 +1,26 @@
-.btn-dropdown {
-    display: none;
-    align-items: center;
-    background: var(--primary);
-    color: white;
-    font-weight: bold;
+.btn-phone {
+    padding: 0.5rem 2.5rem;
+    background: #047ACF;
     border: none;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.25rem 1rem;
-    cursor: pointer;
-    @media screen and (max-width: 991px) { 
-        display: flex;
-    }
-    svg {
-        width: 25px;
-        fill: white;
-        path {
-            
-        }
-    }
-}
-
-.btn-discipline {
-    padding: .5rem 1.5rem;
-    background: var(--primary);
-    color: white;
+    border-radius: 8px;
     font-weight: 500;
-    border-radius: 50px;
-    display: flex;
-    width: fit-content;
-    width: -moz-fit-content;
-    align-items: center;
-    border: 2px solid var(--primary);
-    svg {
-        margin-right: 0.5rem;
-    }
-    &:hover {
-        background: white;
-        text-decoration: none;
-        span {
-            color: var(--primary);
-        }
-        svg path {
-            fill: var(--primary);
-        }
-    }
-}
-
-.btn-fill-more {
-    padding: .5rem 2.5rem;
-    background: var(--primary);
     color: white;
-    font-weight: 500;
-    border-radius: 50px;
-    display: flex;
-    width: fit-content;
-    width: -moz-fit-content;
-    align-items: center;
-    border: 2px solid var(--primary);
-    &:hover {
-        color: white;
-        text-decoration: none;
-    }
-    &::after {
-        content: url(../icons/btn-arrow.svg);
-        margin-left: 0.5rem;
-    }
-}
-.btn-more {
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    font-weight: bold;
-    span {
+    @media screen and (max-width: 1200px) and (min-width: 991px) {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    &::before {
+        content: url(./../icons/phone.svg);
         margin-right: 1rem;
+        display: flex;
+        align-items: center;
     }
-    svg {
-        margin-top: 2px;
-    }
-}
-.owl-theme {
-    .owl {
-        &-dot.active span {
-            background: var(--primary)!important;
-        }
+
+    &:hover {
+        text-decoration: none;
+        color: white;
     }
 }

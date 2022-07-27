@@ -1,78 +1,18 @@
 .footer {
-    padding: 3rem 0;
-    background: #fafafa;
+    background: #F4F4F4;
     &-content {
+        padding: 4rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        @media screen and (max-width: 991px) {
-            grid-template-columns: 1fr 1fr;
-        }
-        @media screen and (max-width: 776px) { 
-            grid-template-columns: 1fr;
-        }
-        grid-gap: 3rem;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    &-item {
-        padding-left: 2.5rem;
-        position: relative;
-        h3 {
-            font-size: 0.875rem;
-            color: #1d1d1d;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            font-family: var(--inter);
-        }
-        p {
-            font-size: 0.975rem;
-            color: #858585;
-            line-height: 1.7;
-        }
-        &-icon {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        &-contact {
-            display: flex;
-            align-items: center;
-            &-left {
-                width: 100%;
-                max-width: 64px;
-                height: 64px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid #ececec;
-                border-radius: 50px;
-            }
-            &-right {
-                margin-left: 1rem;
-                &-top {
-                    color: var(--primary);
-                    font-size: 1.875rem;
-                    font-weight: 700;
-                    @media screen and (max-width: 991px) { 
-                        font-size: 1rem;
-                    }
-                    
-                }
-                &-bottom {
-                    font-size: 1.125rem;
-                    font-weight: bold;
-                    color: black;
-                }
-            }   
-        }
-    }
-    &-socials {
+    &-bottom {
         display: flex;
-        flex-wrap: wrap;
-        a {
-            display: block;
-            margin: 0.25rem;
-        }
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-top: 1px solid #0000001A;
+        align-items: center;
+        font-size: 1rem;
+        color: #7C8495;
     }
 }
